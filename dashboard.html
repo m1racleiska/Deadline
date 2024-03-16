@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Violations Dashboard</h2>
+    <h3>Violations Table:</h3>
+    {{ table | safe }}
+    <h3>Violations Graph:</h3>
+    <img src="data:image/png;base64, {{ graph }}" alt="Violations Graph">
+</body>
+</html>

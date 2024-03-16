@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Devices Info</title>
+</head>
+<body>
+    <h1>Devices Information</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Status</th>
+            <th>Event Count</th>
+        </tr>
+        {% for device in devices_info %}
+            <tr>
+                <td>{{ device.name }}</td>
+                <td>{{ device.location }}</td>
+                <td>{{ device.status }}</td>
+                <td>{{ device.event_count }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
